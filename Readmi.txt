@@ -1,0 +1,33 @@
+This my application.
+It`s like facebook. You can:
+-login
+-registration with:
+    -captcha (use google captcha)
+    -secret key, that you are get on your email
+-have roles (admin, user)
+-if you are admin, you can change user`s profile
+-change setting of your profile, if you are users
+-write messages it also include:
+        -message text
+        -tag
+        -some picture
+-change your message
+-subscribe on some person / or have subscriptions on you
+-see all messages on site or your own
+-if you like message, you can go to user profile, that leave this message
+
+Using:
+-IntelliJ Idea
+-Tomcat
+-MySQL
+_____________________________
+-Freemarker
+_____________________________
+-Spring Boot
+-Hibernate
+-Spring Data JPA
+-Spring Security
+-Spring Boot Mail / Session
+-FlyWay - for migration
+______________________________
+-Maven
