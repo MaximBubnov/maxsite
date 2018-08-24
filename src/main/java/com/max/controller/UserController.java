@@ -64,7 +64,7 @@ public class UserController {
     }
 
     //подписка
-    @GetMapping("subscribe/${user}")
+    @GetMapping("subscribe/{user}")
     public String subscribe(
             @AuthenticationPrincipal User currentUser,
             @PathVariable User user) {
@@ -73,7 +73,7 @@ public class UserController {
         return "redirect:/user-messages/" + user.getId();
     }
     //отписка
-    @GetMapping("unsubscribe/${user}")
+    @GetMapping("unsubscribe/{user}")
     public String unsubscribe(
             @AuthenticationPrincipal User currentUser,
             @PathVariable User user) {
@@ -83,7 +83,7 @@ public class UserController {
     }
 
     //выведем страницу с подспиками (кто - на кого)
-    @GetMapping("{type}/${user}/list")
+    @GetMapping("{type}/{user}/list")
     public String userListSub(
             Model model,
             @PathVariable User user,
